@@ -4,20 +4,20 @@
  * Plugin Name: Advanced Custom Fields: Nav Menu
  * Plugin URI:  https://github.com/joshuafredrickson/acf-nav-menu
  * Description: A nav menu field for ACF.
- * Version:     1.0.1
+ * Version:     1.0.2
  * Author:      Joshua Fredrickson
  * Author URI:  https://github.com/joshuafredrickson
  */
 
 namespace Jf\AcfNavMenu;
 
-add_filter('after_setup_theme', new class {
+add_action('after_setup_theme', new class {
     /**
      * Setup the plugin.
      *
      * @return void
      */
-    public function __construct()
+    public function __invoke()
     {
         if (file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
             require_once $composer;
