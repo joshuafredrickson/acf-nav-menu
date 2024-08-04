@@ -53,7 +53,7 @@ add_action('plugins_loaded', new class () {
         add_filter('ac/column/value', function ($value, $id, $column) {
             if (
                 ! is_a($column, '\ACA\ACF\Column') ||
-                $column->get_acf_field_option('type') !== 'nav_menu'
+                $column->get_type() !== 'nav_menu'
             ) {
                 return $value;
             }
