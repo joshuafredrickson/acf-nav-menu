@@ -4,7 +4,7 @@
  * Plugin Name: Advanced Custom Fields: Nav Menu
  * Plugin URI:  https://github.com/joshuafredrickson/acf-nav-menu
  * Description: A nav menu field for ACF.
- * Version:     1.0.3
+ * Version:     1.1.1
  * Author:      Joshua Fredrickson
  * Author URI:  https://github.com/joshuafredrickson
  */
