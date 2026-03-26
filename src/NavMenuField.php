@@ -40,6 +40,16 @@ class NavMenuField extends \acf_field
     public $defaults = [];
 
     /**
+     * @var string
+     */
+    public $uri;
+
+    /**
+     * @var string
+     */
+    public $path;
+
+    /**
      * Settings
      *
      * @var object
